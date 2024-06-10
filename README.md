@@ -39,7 +39,7 @@ Crear una función de búsqueda de transbordos.
 ### Paso 3. Crear las Tablas para Transbordos
 1. Asegúrate de estar en el mismo directorio que el archivo transfer_scheme.sql.
 
-2. Ejecuta el siguiente comando para crear las tablas necesarias para el esquema de transbordos:
+2. Ejecuta el siguiente comando para crear las tablas necesarias para el esquema de transbordos, se creará una base de datos nueva llamada pruebaDB_nuevo :
 
    ```bash
     Get-Content transfer_scheme.sql | mysql -u root -p pruebaDB
@@ -52,7 +52,7 @@ Crear una función de búsqueda de transbordos.
 2. Ejecuta el siguiente comando para crear las funciones BuscarRutas y BuscarTransbordos:
 
     ```bash
-    Get-Content functions.sql | mysql -u root -p pruebaDB
+    Get-Content functions.sql | mysql -u root -p pruebaDB_nuevo
     ```
 
 3. Conéctate a la base de datos pruebaDB usando el siguiente comando:
@@ -61,7 +61,7 @@ Crear una función de búsqueda de transbordos.
     mysql -u root -p
     ```
 
-4. Selecciona la base de datos pruebaDB:
+4. Selecciona la base de datos de prueba (pruebaDB_nuevo), para no alterar la base de datos original:
 
     ```bash
     USE pruebaDB_nuevo;
