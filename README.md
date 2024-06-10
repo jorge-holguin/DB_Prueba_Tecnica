@@ -52,7 +52,7 @@ Crear una función de búsqueda de transbordos.
 2. Ejecuta el siguiente comando para crear las funciones BuscarRutas y BuscarTransbordos:
 
     ```bash
-    Get-Content functions.sql | mysql -u root -p pruebaDB_nuevo
+    Get-Content functions.sql | mysql -u root -p pruebaDB_nueva
     ```
 
 3. Conéctate a la base de datos pruebaDB usando el siguiente comando:
@@ -64,7 +64,7 @@ Crear una función de búsqueda de transbordos.
 4. Selecciona la base de datos de prueba (pruebaDB_nuevo), para no alterar la base de datos original:
 
     ```bash
-    USE pruebaDB_nuevo;
+    USE pruebaDB_nueva;
     ```
 5. Ejecutar las funciones 
 
