@@ -64,7 +64,7 @@ Crear una función de búsqueda de transbordos.
 4. Selecciona la base de datos pruebaDB:
 
     ```bash
-    USE pruebaDB;
+    USE pruebaDB_nuevo;
     ```
 5. Ejecutar las funciones 
 
